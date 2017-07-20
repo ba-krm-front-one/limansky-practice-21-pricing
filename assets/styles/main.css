@@ -1,0 +1,203 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/BebasNeue Light.ttf");
+  font-weight: 100; }
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/BebasNeue Regular.otf");
+  font-weight: 400; }
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/BebasNeue Bold.otf");
+  font-weight: 700; }
+body {
+  min-width: 320px; }
+
+.ba-elegant {
+  background: url("../images/hero-img.png") 50% no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh; }
+
+.ba-container {
+  padding: 0;
+  padding-bottom: 45px; }
+  .ba-container .ba-container-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    flex-wrap: wrap; }
+    .ba-container .ba-container-head .logo {
+      background: url("../images/logo.png") 50% no-repeat;
+      /* Style for "Logo" */
+      width: 109px;
+      height: 18px;
+      display: block;
+      margin-top: 50px; }
+
+nav ul {
+  list-style-type: none;
+  margin-top: 45px; }
+  nav ul li {
+    float: left;
+    padding-right: 50px;
+    display: block;
+    height: auto; }
+    nav ul li a {
+      text-decoration: none;
+      /* Style for "HELLO SERV" */
+      color: #fffefe;
+      font-family: Lato, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 38px;
+      text-transform: uppercase;
+      padding: 0 0 10px 0;
+      display: block;
+      position: relative; }
+      nav ul li a:before {
+        display: block;
+        background-color: #fffefe;
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 0;
+        height: 3px;
+        opacity: 0;
+        transform: translateX(-20px);
+        transition: transform .2s ease-in, opacity .2s ease-in; }
+      nav ul li a:hover:before {
+        opacity: 1;
+        transform: translateY(0); }
+    nav ul li li:last-of-type {
+      padding-right: 0; }
+
+.ba-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px; }
+  .ba-banner h1 {
+    /* Style for "weтАЩre crea" */
+    max-width: 596px;
+    min-height: 37px;
+    color: #ffffff;
+    font-family: Raleway, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+    text-align: center; }
+  .ba-banner hr {
+    /* Style for "Shape 1" */
+    width: 86px;
+    height: 2px;
+    background-color: #ffffff; }
+  .ba-banner p {
+    /* Style for "Lorem ipsu" */
+    max-width: 596px;
+    min-height: 50px;
+    color: #fffefe;
+    font-family: Lato, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center; }
+
+header .scroll {
+  /* Style for "Right Arro" */
+  width: 92px;
+  height: 92px;
+  background: url("../images/right-arrow-circular-button--attribute-as-robin-kylander-from-flaticon-com.svg") 50% no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  margin: 150px auto 0;
+  display: block;
+  position: relative; }
+
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px); }
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px); } }
+header .scroll:hover {
+  animation: bounce 1s;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px; }
+
+.main__section--our-service h1 {
+  /* Style for "our servic" */
+  max-width: 248px;
+  color: #222222;
+  font-family: Raleway,sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 100px auto 65px; }
+.main__section--our-service hr {
+  /* Style for "Line sep" */
+  width: 86px;
+  height: 2px;
+  background-color: #222222;
+  margin: 0 auto 60px;
+  text-align: center; }
+.main__section--our-service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  max-width: 1150px;
+  margin: auto; }
+  .main__section--our-service-container div {
+    padding: 20px;
+    max-width: 333px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    color: #222222;
+    font-family: Lato,sans-serif;
+    font-weight: 400;
+    text-align: center; }
+    .main__section--our-service-container div h5 {
+      font-size: 24px;
+      line-height: 24px; }
+    .main__section--our-service-container div p {
+      font-size: 16px;
+      line-height: 30px; }
+
+.main__section--dolore {
+  background: url("../images/-img-.png") 50% no-repeat, #222222;
+  background-size: cover;
+  max-width: 1600px;
+  min-height: 500px; }
+  .main__section--dolore .left h1 {
+    width: 560px;
+    height: 39px;
+    color: #ffffff;
+    font-family: Lato, sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 90px;
+    text-transform: uppercase; }
+  .main__section--dolore .left hr {
+    width: 86px;
+    height: 2px;
+    background-color: #ffffff; }
+
+.main__section--our-work {
+  max-width: 1600px;
+  min-height: 500px; }
+
+/*# sourceMappingURL=main.css.map */
